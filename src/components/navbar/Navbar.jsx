@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from 'next/link'
+import React from 'react'
 
 const links = [
   {
@@ -32,12 +32,12 @@ const links = [
     title: 'Dashboard',
     url: '/dashboard',
   },
-];
+]
 const Navbar = () => {
   return (
     <div className="h-[100px] flex justify-between items-center">
       <Link href="/" className={`font-bold text-[22px]`}>
-        yulian
+        J4SK13R
       </Link>
       <div className={`flex items-center gap-[20px]`}>
         {/* <DarkModeToggle /> */}
@@ -53,7 +53,7 @@ const Navbar = () => {
     )} */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

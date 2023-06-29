@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import Image from 'next/image';
+import Image from 'next/image'
 
 const Footer = () => {
   return (
     <div className={`h-[50px] text-[14px] flex items-center justify-between`}>
-      <div>©2023 Lamamia. All rights reserved.</div>
-      <div className={`fle items-center gap-[10px]`}>
+      <div>©2023 J4SK13R. All rights reserved.</div>
+      <div className={`flex items-center gap-[10px]`}>
         <Image
           src="/1.png"
           width={15}
@@ -37,7 +37,7 @@ const Footer = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
