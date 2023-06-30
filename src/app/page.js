@@ -1,7 +1,7 @@
 import Image from 'next/image';
-
 import Hero from 'public/hero.png';
 import Button from '@/components/Button/Button';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <Button url="/portfolio" text="See Our Works" />
       </div>
       <div className={`flex-1 flex flex-col gap-[50px]`}>
-        <Image src={Hero} alt="" className={`w-full h-[500px] object-contain`} />
+        <Image src={Hero} alt="" className={styles.img} />
       </div>
     </div>
   );

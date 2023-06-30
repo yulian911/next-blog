@@ -1,5 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
+'use client';
+
+import Link from 'next/link';
+import React from 'react';
+import DarkModeToggle from '../DarkMode/DarkModeToggle';
 
 const links = [
   {
@@ -32,15 +35,15 @@ const links = [
     title: 'Dashboard',
     url: '/dashboard',
   },
-]
+];
 const Navbar = () => {
   return (
     <div className="h-[100px] flex justify-between items-center">
       <Link href="/" className={`font-bold text-[22px]`}>
-        J4SK13R
+        J<span className="text-[red]">4</span>SK<span className="text-[red]">13</span>R
       </Link>
       <div className={`flex items-center gap-[20px]`}>
-        {/* <DarkModeToggle /> */}
+        <DarkModeToggle />
         {links.map(link => (
           <Link key={link.id} href={link.url} className={``}>
             {link.title}
@@ -53,7 +56,7 @@ const Navbar = () => {
     )} */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
