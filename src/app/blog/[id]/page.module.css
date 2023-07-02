@@ -36,6 +36,8 @@
   flex: 1;
   height: 300px;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .image {

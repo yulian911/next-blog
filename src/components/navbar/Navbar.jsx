@@ -1,8 +1,10 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import React from 'react';
-import DarkModeToggle from '../DarkMode/DarkModeToggle';
+import Link from 'next/link'
+import React from 'react'
+import styles from './navbar.module.css'
+import DarkModeToggle from '../DarkMode/DarkModeToggle'
+import { signOut, useSession } from 'next-auth/react'
 
 const links = [
   {
@@ -35,8 +37,10 @@ const links = [
     title: 'Dashboard',
     url: '/dashboard',
   },
-];
+]
 const Navbar = () => {
+  const session = useSession()
+  console.log(session)
   return (
     <div className="h-[100px] flex justify-between items-center">
       <Link href="/" className={`font-bold text-[22px]`}>
@@ -49,14 +53,14 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        {/* {session.status === "authenticated" && (
-      <button className={styles.logout} onClick={signOut}>
-        Logout
-      </button>
-    )} */}
+        {session.status === 'authenticated' && (
+          <button className={styles.logout} onClick={signOut}>
+            Logout
+          </button>
+        )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

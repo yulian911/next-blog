@@ -1,12 +1,12 @@
-import Button from '@/components/Button/Button';
-import Image from 'next/image';
-import React from 'react';
-import styles from './page.module.css';
+import Button from '@/components/Button/Button'
+import Image from 'next/image'
+import React from 'react'
+import styles from './page.module.css'
 
 export const metadata = {
-  title: 'Lama Dev Contact Information',
+  title: 'J4SK13R Contact Information',
   description: 'This is Contact Page',
-};
+}
 
 const Contact = () => {
   return (
@@ -28,7 +28,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
